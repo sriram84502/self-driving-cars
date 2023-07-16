@@ -16,6 +16,7 @@ body{
     position: absolute;
     top: 20%;
     right: 10%;
+    animation: slideIn 1s forwards;
 }
 
 .hero-car img{
@@ -23,6 +24,15 @@ body{
     max-width: 100%;
     height: auto;
 }
+
+@keyframes slideIn {
+    from {
+      right: -300px;
+    }
+    to {
+      right: 0;
+    }
+  }
 
 .hero-data{
     position: relative;
